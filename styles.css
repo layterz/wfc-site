@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Harmond';
+    src: url('./assets/DxGrafik-SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    color: #fff;
+    display: flex;
+    text-shadow: 0 0 32px rgba(0, 0, 0, .3);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+.logo {
+    font-family: 'Harmond', sans-serif;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background: url('./assets/bg1.jpg') no-repeat top center/cover;
+    background-attachment: fixed;
+}
+
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: 'Harmond', sans-serif;
+    text-shadow: 0 0 32px rgba(0, 0, 0, .3);
+    font-size: 64px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.hero p {
+    font-size: 32px;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, .5);
+}
+
+.hero .btn {
+    color: #000;
+    background-color: #fff;
+    padding: 20px 40px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mission {
+    padding: 50px 20px;
+    margin-top: 100px;
+}
+
+.mission-container {
+    display: flex;
+    gap: 40px;
+    margin: 0 20px;
+}
+
+.mission-title {
+    flex: 1;
+}
+
+.mission-content {
+    flex: 2;
+}
+
+.mission h2 {
+    font-family: 'Harmond', sans-serif;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.mission p {
+    font-family: 'Harmond', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1;
+    padding-right: 40px;
+}
+
+.breaker {
+    height: 1px;
+    background: url('./assets/bg1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 160px;
+}
+
+.demo {
+    padding: 40px 20px;
+}
+
+.demo-video {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+.demo ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.demo ul li {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.demo ul li strong {
+    font-family: 'Harmond', sans-serif;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.signup {
+    text-align: center;
+    background-image: url('./assets/bg1.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 20px 40px 200px 40px;
+    font-size: 18px;
+    text-shadow: 0 0 12px rgba(0, 0, 0, .6);
+}
+
+.signup h2 {
+    font-family: 'Harmond', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.signup form {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.signup input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #fff;
+}
+
+.signup button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+footer {
+    height: 300px;
+    background-color: transparent;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('./assets/bg1.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
